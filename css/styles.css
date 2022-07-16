@@ -126,7 +126,7 @@ body {
     letter-spacing: 0.02em;
 }
 
-.contacts .contact-item:not(:nth-last-child(1)) {
+.contact-item:not(:nth-last-child(1)) {
     margin-right: 30px;
 }
 
