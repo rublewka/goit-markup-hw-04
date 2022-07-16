@@ -48,8 +48,8 @@ body {
 
 .container {
     width: 1200px;
-    padding: 0 15px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* Стилизация шапки */
@@ -126,10 +126,9 @@ body {
     letter-spacing: 0.02em;
 }
 
-.contact-item:not(:nth-last-child(1)) {
+.contacts .contact-item:not(:nth-last-child(1)) {
     margin-right: 30px;
 }
-
 
 .contact-icon {
     margin-right: 10px;
@@ -137,6 +136,7 @@ body {
 
     fill: currentColor;
 }
+
 
 .nav-link:hover,
 .nav-link:focus,
@@ -155,11 +155,6 @@ body {
 /* Главная страница */
 /* Секция герой */
 .thumb {
-    max-width: 1600px;
-    margin: 0 auto;
-}
-
-.hero {
     padding: 200px 15px 200px 15px;
     background-color: #C4C4C4;
     background-image: radial-gradient(ellipse at center,
@@ -172,6 +167,11 @@ body {
 
     min-height: 600px;
     text-align: center;
+}
+
+.hero {
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .hero-title {
@@ -203,7 +203,6 @@ body {
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.06em;
-
 }
 
 .hero-button:hover,
@@ -211,9 +210,10 @@ body {
     background-color: #188CE8;
 }
 
+
 /* Секция наши качества */
 .quality {
-    padding: 94px 15px;
+    padding: 94px 0;
 }
 
 .quality .quality-list {
@@ -280,7 +280,7 @@ body {
 /* Стилизация секции наша команда */
 .our-team {
     background-color: var(--bkg-color);
-    padding: 94px 15px;
+    padding: 94px 0;
 }
 
 .our-team-list {
@@ -305,15 +305,19 @@ body {
     display: block;
 }
 
-.our-team-list-card-name {
-    margin: 30px 0 0 0;
+.our-team-list-card-capture {
+    padding: 30px 0 16px;
+}
 
+.our-team-list-card-name {
+    margin: 0;
     color: var(--title-color);
 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
+
 }
 
 .our-team-list-card-role {
@@ -333,7 +337,6 @@ body {
     align-items: center;
 
     padding: 0;
-    margin-top: 16px;
     margin-bottom: 30px;
 }
 
@@ -371,9 +374,8 @@ body {
 }
 
 /* Стилизация секции наши клиенты */
-.clients.container {
-    padding-top: 94px;
-    padding-bottom: 94px;
+.clients {
+    padding: 94px 0;
 }
 
 .clients .clients-list {
@@ -422,7 +424,7 @@ body {
 
 /* Страница портфолио */
 .examples {
-    padding: 94px 15px;
+    padding: 94px 0;
 }
 
 .filters {
@@ -455,13 +457,15 @@ body {
 .filters .filter:focus {
     background-color: var(--acent-color);
     color: var(--alternative-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.examples .examples-list {
+.examples-list {
     display: flex;
     flex-wrap: wrap;
-    margin: 34px 0 0;
+    margin: 50px 0 0;
     padding: 0;
 }
 
@@ -514,12 +518,12 @@ body {
 }
 
 /* Стилизация подвала */
-footer {
+.footer {
     background-color: #2F303A;
     padding: 0 0 60px 0;
 }
 
-.footer.container {
+.footer .container {
     display: flex;
     justify-content: start;
 }
@@ -538,13 +542,16 @@ footer {
     margin-right: 70px;
 }
 
-
 .foot-link.list:hover,
 .foot-link.list:focus {
     color: var(--acent-color);
 }
 
-footer .contacts.list {
+.contacts {
+    padding: 0;
+}
+
+.footer .contacts.list {
     margin: 20px 0 0 0;
 }
 
@@ -557,7 +564,8 @@ footer .contacts.list {
 
     font-style: normal;
     font-weight: 400;
-
+    letter-spacing: 0.03em;
+    line-height: 1.71;
 }
 
 .footer-logo,
