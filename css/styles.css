@@ -6,6 +6,7 @@ body {
     --logo-color: #000000;
     --alternative-color: #ffffff;
     --bkg-color: #F5F4FA;
+    --ico-color: #AFB1B8;
 
     /* Нормализация */
     font-family: 'Roboto', sans-serif;
@@ -159,7 +160,7 @@ body {
     background-color: #C4C4C4;
     background-image: radial-gradient(ellipse at center,
             rgba(47, 48, 58, 0.4),
-            rgba(0, 0, 0, 0.6)), url("../images/hero-bkg.jpg");
+            rgba(47, 48, 58, 0.4)), url("../images/hero-bkg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -295,6 +296,7 @@ body {
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF;
 }
 
 .our-team-list-card:not(:nth-last-child(1)) {
@@ -359,7 +361,7 @@ body {
 }
 
 .soc-med-link .soc-med-ico {
-    fill: var(--text-color);
+    fill: var(--ico-color);
 }
 
 .soc-med-list .soc-med-link:hover,
@@ -400,7 +402,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    border: 1px solid #AFB1B8;
+    border: 1px solid var(--ico-color);
     border-radius: 4px;
 }
 
@@ -409,7 +411,7 @@ body {
 }
 
 .clients-item .client-ico {
-    fill: var(--text-color);
+    fill: var(--ico-color);
 }
 
 .clients-item:hover .client-link,
